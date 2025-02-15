@@ -4,8 +4,6 @@ class Solution(object):
         myset = set(nums)
         return_lst = []
         for i in range(1, length_nums+1):
-            if i in myset:
-                continue
-            else:
+            if i not in myset:
                 return_lst.append(i)
         return return_lst
